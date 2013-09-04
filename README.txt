@@ -24,3 +24,7 @@ v1.2
 _ Added grids page to showcase how grids can be used in theme, styles located on grids.css
 - Added submenus on sidebar navigation menu, styles are located on layout.css
 - Changed how the navigation menu is shown on tablet and mobile devices, now sliding from the left side like facebook-app-style
+
+v2.0
+- Added a Bootstrap 3 theme version while also maintaining support for v3.2
+- Added DataTables plugin for both versions
