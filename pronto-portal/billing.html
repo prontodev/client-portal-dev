@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Detail Admin - Tables showcase</title>
+	<title>Detail Admin - DataTables</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
@@ -11,14 +11,15 @@
 
     <!-- global styles -->
     <link rel="stylesheet" type="text/css" href="css/compiled/layout.css">
-    <link rel="stylesheet" type="text/css" href="css/compiled/elements.css">
+        <link rel="stylesheet" type="text/css" href="css/compiled/elements.css">
     <link rel="stylesheet" type="text/css" href="css/compiled/icons.css">
 
     <!-- libraries -->
     <link href="css/lib/font-awesome.css" type="text/css" rel="stylesheet" />
+    <link href="css/lib/jquery.dataTables.css" type="text/css" rel="stylesheet" />
     
     <!-- this page specific styles -->
-    <link rel="stylesheet" href="css/compiled/tables.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/compiled/datatables.css" type="text/css" media="screen" />
 
     <!-- open sans font -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -41,7 +42,7 @@
             <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
         </div>
         <ul class="nav navbar-nav pull-right hidden-xs">
-            <li class="hidden-xs hidden-sm">
+            <li class="hidden-xs">
                 <input class="search" type="text" />
             </li>
             <li class="notification-dropdown hidden-xs hidden-sm">
@@ -216,8 +217,8 @@
                     <i class="icon-chevron-down"></i>
                 </a>
                 <ul class="active submenu">
-                    <li><a href="tables.html" class="active">Custom tables</a></li>
-                    <li><a href="datatables.html">DataTables</a></li>
+                    <li><a href="tables.html">Custom tables</a></li>
+                    <li><a href="datatables.html" class="active">DataTables</a></li>
                 </ul>
             </li>
             <li>
@@ -267,8 +268,9 @@
                 <span class="icon"></span><span class="text">Dark skin</span>
             </a>
         </div>
+
         
-        <div id="pad-wrapper">
+        <div id="pad-wrapper" class="datatables-page">
             <!-- Billing Details -->
             <div class="row head">
                 <div class="col-md-12">
@@ -290,8 +292,7 @@
                     <p><strong>Zip/Postal Code</strong>: 98104</p>
                 </div>
             </div>
-
-                <!-- Edit Billing Records Modal -->
+            <!-- Edit Billing Records Modal -->
                             <!-- Modal -->
                               <div class="modal fade" id="billingedit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
@@ -311,31 +312,11 @@
                                 </div><!-- /.modal-dialog -->
                               </div><!-- /.modal -->
                 <!-- Edit Billing Records Modal -->
+            <!-- invoices table -->
+            <div class="row">
+                <div class="col-md-12">
 
-            
-
-
-            <!-- orders table -->
-            <div class="table-wrapper orders-table section">
-                <div class="row head">
-                    <div class="col-md-12">
-                        <h4>Invoices</h4>
-                    </div>
-                </div>
-
-                <div class="row filter-block">
-                    <div class="pull-right">
-                        <div class="btn-group pull-right">
-                            <button class="glow left large">All</button>
-                            <button class="glow middle large">Pending</button>
-                            <button class="glow right large">Completed</button>
-                        </div>
-                        <input type="text" class="search order-search" placeholder="Search for an order.." />
-                    </div>
-                </div>
-
-                <div class="row">
-                    <table class="table table-hover">
+                    <table cellpadding="0" cellspacing="0" border="0" class="" id="invoices">
                         <thead>
                             <tr>
                                 <th class="col-md-2">
@@ -413,19 +394,236 @@
                                     $ 247.00
                                 </td>
                             </tr>
+                            <tr class="first">
+                                <td>
+                                    <a href="#">#459</a>
+                                </td>
+                                <td>
+                                    Jan 03, 2013
+                                </td>
+                                <td>
+                                    <span class="label label-success">Completed</span>
+                                </td>
+                                <td>
+                                    $ 247.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">#510</a>
+                                </td>
+                                <td>
+                                    Feb 22, 2013
+                                </td>
+                                <td>
+                                    <span class="label label-info">Pending</span>
+                                </td>
+                                <td>
+                                    $ 247.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">#590</a>
+                                </td>
+                                <td>
+                                    Mar 03, 2013
+                                </td>
+                                <td>
+                                    <span class="label label-success">Completed</span>
+                                </td>
+                                <td>
+                                    $ 350.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">#618</a>
+                                </td>
+                                <td>
+                                    Jan 03, 2013
+                                </td>
+                                <td>
+                                    <span class="label label-danger">Canceled</span>
+                                </td>
+                                <td>
+                                    $ 247.00
+                                </td>
+                            </tr>
+                            <tr class="first">
+                                <td>
+                                    <a href="#">#459</a>
+                                </td>
+                                <td>
+                                    Jan 03, 2013
+                                </td>
+                                <td>
+                                    <span class="label label-success">Completed</span>
+                                </td>
+                                <td>
+                                    $ 247.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">#510</a>
+                                </td>
+                                <td>
+                                    Feb 22, 2013
+                                </td>
+                                <td>
+                                    <span class="label label-info">Pending</span>
+                                </td>
+                                <td>
+                                    $ 247.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">#590</a>
+                                </td>
+                                <td>
+                                    Mar 03, 2013
+                                </td>
+                                <td>
+                                    <span class="label label-success">Completed</span>
+                                </td>
+                                <td>
+                                    $ 350.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">#618</a>
+                                </td>
+                                <td>
+                                    Jan 03, 2013
+                                </td>
+                                <td>
+                                    <span class="label label-danger">Canceled</span>
+                                </td>
+                                <td>
+                                    $ 247.00
+                                </td>
+                            </tr>
+                            <tr class="first">
+                                <td>
+                                    <a href="#">#459</a>
+                                </td>
+                                <td>
+                                    Jan 03, 2013
+                                </td>
+                                <td>
+                                    <span class="label label-success">Completed</span>
+                                </td>
+                                <td>
+                                    $ 247.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">#510</a>
+                                </td>
+                                <td>
+                                    Feb 22, 2013
+                                </td>
+                                <td>
+                                    <span class="label label-info">Pending</span>
+                                </td>
+                                <td>
+                                    $ 247.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">#590</a>
+                                </td>
+                                <td>
+                                    Mar 03, 2013
+                                </td>
+                                <td>
+                                    <span class="label label-success">Completed</span>
+                                </td>
+                                <td>
+                                    $ 350.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">#618</a>
+                                </td>
+                                <td>
+                                    Jan 03, 2013
+                                </td>
+                                <td>
+                                    <span class="label label-danger">Canceled</span>
+                                </td>
+                                <td>
+                                    $ 247.00
+                                </td>
+                            </tr>
+                            <tr class="first">
+                                <td>
+                                    <a href="#">#459</a>
+                                </td>
+                                <td>
+                                    Jan 03, 2013
+                                </td>
+                                <td>
+                                    <span class="label label-success">Completed</span>
+                                </td>
+                                <td>
+                                    $ 247.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">#510</a>
+                                </td>
+                                <td>
+                                    Feb 22, 2013
+                                </td>
+                                <td>
+                                    <span class="label label-info">Pending</span>
+                                </td>
+                                <td>
+                                    $ 247.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">#590</a>
+                                </td>
+                                <td>
+                                    Mar 03, 2013
+                                </td>
+                                <td>
+                                    <span class="label label-success">Completed</span>
+                                </td>
+                                <td>
+                                    $ 350.00
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#">#618</a>
+                                </td>
+                                <td>
+                                    Jan 03, 2013
+                                </td>
+                                <td>
+                                    <span class="label label-danger">Canceled</span>
+                                </td>
+                                <td>
+                                    $ 247.00
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
-                        <ul class="pagination pull-right">
-                            <li><a href="#">&#8249;</a></li>
-                            <li class="active"><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">&#8250;</a></li>
-                        </ul>
                 </div>
             </div>
-            <!-- end orders table -->
+            <!-- end invoices table -->
+
         </div>
     </div>
     <!-- end main container -->
@@ -434,5 +632,15 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/theme.js"></script>
+    <!-- datatables custom JS -->
+    <script src="js/jquery.dataTables.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#invoices').dataTable({
+                "sPaginationType": "full_numbers"
+            });
+        });
+    </script>
+    <!-- end datatables custom JS -->
 </body>
 </html>
