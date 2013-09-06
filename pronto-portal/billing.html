@@ -20,6 +20,7 @@
     
     <!-- this page specific styles -->
     <link rel="stylesheet" href="css/compiled/datatables.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/compiled/account-billing.css" type="text/css" media="screen" />
 
     <!-- open sans font -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -193,33 +194,37 @@
         </div>
 
         
-        <div id="pad-wrapper" class="datatables-page">
+        <div id="pad-wrapper" class="datatables-page billing-page">
             <!-- Billing Details -->
-            <div class="row head">
-                <div class="col-md-12">
-                    <h4>Billing Details <a href="edit-account-details.html" class="btn-flat inverse small">Update Billing Details</a></h4>
-                </div>
-            </div>
-            <div class="row head">
-                <div class="col-md-4"> 
-                    <p><strong>First Name</strong>: Derek Brown</p>
-                    <p><strong>Last Name</strong>: Brown</p>
-                    <p><strong>Email</strong>: expense@prontomarketing.com</p>
-                    <p><strong>Phone</strong>: 8002703440</p>
-                </div>
-                <div class="col-md-4">
-                    <p><strong>Address</strong>: 93 S Jackson St.</p>
-                    <p><strong>City</strong>: Seattle</p>
-                    <p><strong>Country</strong>: Seattle</p>
-                    <p><strong>State/Province</strong>: Washington</p>
-                    <p><strong>Zip/Postal Code</strong>: 98104</p>
-                </div>
-            </div>
-            
+            <div class="row header form-wrapper">
+                <div class="row header">
+                        <div class="col-md-6">
+                            <h3>Billing Details</h3>
+                        </div>
+                        <div class="col-md-3 col-md-offset-1">
+                            <a href="edit-account-details.html" class="btn-flat inverse large">Update Billing Details</a>
+                        </div>
+                    </div>
+                <div class="col-md-9 with-sidebar">
+                    <div class="row header">
+                        <div class="col-md-4"> 
+                            <p><strong>First Name</strong>: Derek Brown</p>
+                            <p><strong>Last Name</strong>: Brown</p>
+                            <p><strong>Email</strong>: expense@prontomarketing.com</p>
+                            <p><strong>Phone</strong>: 8002703440</p>
+                        </div>
+                        <div class="col-md-4">
+                            <p><strong>Address</strong>: 93 S Jackson St.</p>
+                            <p><strong>City</strong>: Seattle</p>
+                            <p><strong>Country</strong>: Seattle</p>
+                            <p><strong>State/Province</strong>: Washington</p>
+                            <p><strong>Zip/Postal Code</strong>: 98104</p>
+                        </div>
+                    </div>
+
             <!-- invoices table -->
             <div class="row">
-                <div class="col-md-12">
-
+                <div class="col-md-12"> 
                     <table cellpadding="0" cellspacing="0" border="0" class="" id="invoices">
                         <thead>
                             <tr>
@@ -524,10 +529,22 @@
                             </tr>
                         </tbody>
                     </table>
+                  </div>  
                 </div>
             </div>
-            <!-- end invoices table -->
 
+            <!-- end invoices table -->
+            <!-- side right column -->
+                <div class="col-md-3 form-sidebar pull-right">
+                    <div class="alert alert-info hidden-tablet">
+                        <i class="icon-lightbulb pull-left"></i>
+                        Some really useful help text goes here. 
+                    </div>                        
+                    <h6>Sidebar text for instructions</h6>
+                    <p>Add multiple users at once</p>
+                    <p>Choose one of the following file types:</p>
+                </div>
+            </div>
         </div>
     </div>
     <!-- end main container -->
