@@ -302,7 +302,44 @@
                                       <h4 class="modal-title">Edit Billing Details</h4>
                                     </div>
                                     <div class="modal-body">
-                                      ...
+                                        <form>
+                                            <table class="table">
+                                              <thead>
+                                                  <tr>
+                                                      <th class="col-md-5"></th>
+                                                      <th class="col-md-7"></th>
+                                                  </tr>
+                                              </thead>
+                                              <tbody>
+                                                  <tr>
+                                                      <td><label>DNS Record Type:</label></td>
+                                                      <td><div class="ui-select">
+                                                            <select>
+                                                                <option>A Record</option>
+                                                                <option selected="">CNAME</option>
+                                                                <option>TXT</option>
+                                                                <option>NS</option>
+                                                            </select>
+                                                        </div> <span class="label label-info pull-right" data-toggle="tooltip" data-placement="left" title="" data-original-title="Select your DNS record type.">?</span></td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td><label>DNS Record:</label></td>
+                                                      <td><input class="col-md-6" type="text">.clientdomain.com <span class="label pull-right" data-toggle="tooltip" data-placement="left" title="" data-original-title="The subdomain of your domain, ie - www.">?</span></td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td><label>Record Value:</label></td>
+                                                      <td><input class="col-md-9" type="text">
+                                                        <span class="label label-info pull-right" data-toggle="tooltip" data-placement="left" title="" data-original-title="The target of the DNS record.">?</span></td></td>
+                                                  </tr>
+                                                  <tr>
+                                                      <td><label>Country:</label></td>
+                                                      <td>
+                                                        
+                                                                <span class="label label-info pull-right help" data-toggle="tooltip" data-placement="left" title="" data-original-title="This is the estimated time until live.">?</span></td>
+                                                  </tr>
+                                              </tbody>
+                                              </table>  
+                                            </form>
                                     </div>
                                     <div class="modal-footer">
                                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
