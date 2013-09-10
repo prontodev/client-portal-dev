@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Detail Admin - User Profile</title>
+	<title>Detail Admin - Organization Profile</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="css/compiled/icons.css">
     
     <!-- this page specific styles -->
-    <link rel="stylesheet" href="css/compiled/user-profile.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/compiled/org-profile.css" type="text/css" media="screen" />
 
     <!-- open sans font -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -272,9 +272,7 @@
             <!-- header -->
             <div class="row header">
                 <div class="col-md-8">
-                    <img src="img/contact-profile.png" class="avatar img-circle">
-                    <h3 class="name">Alejandra Galván Castillo</h3>
-                    <span class="area">Graphic Designer</span>
+                    <h3 class="name">McFly Company & Co.</h3>
                 </div>
                 <a class="btn-flat icon pull-right delete-user" data-toggle="tooltip" title="Delete user" data-placement="top">
                     <i class="icon-trash"></i>
@@ -290,30 +288,53 @@
                     <div class="profile-box">
                         <!-- biography -->
                         <div class="col-md-12 section">
-                            <h6>Biography</h6>
-                            <p>There are many variations of passages of Lorem Ipsum available but the majority have humour suffered alteration in believable some formhumour , by injected humour, or randomised words which don't look even slightly believable. </p>
+                            <div class="row">
+                                <div class="col-md-6"> 
+                                    <p><strong>Primary Contact</strong>: Derek Brown</p>
+                                    <p><strong>Last Name</strong>: Brown</p>
+                                    <p><strong>Email</strong>: derek@prontomarketing.com</p>
+                                    <p><strong>Phone</strong>: 8002703440</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p><strong>Production Manager</strong>: Cory Smith</p>
+                                    <p><strong>Industry</strong>: Technology</p>
+                                    <p><strong>Country</strong>: USA</p>
+                                </div>
+                            </div>
                         </div>
-
-                        <h6>Recent orders</h6>
+                    <div class="col-md-12">
+                        <h6>Recent Tickets</h6>
                         <br>
-                        <!-- recent orders table -->
+                        <!-- recent tickets table -->
                         <table class="table table-hover">
                             <thead>
                                 <tr>
+                                    <th class="col-md-1">
+                                        ID
+                                    </th>
                                     <th class="col-md-2">
-                                        Order ID
+                                        <span class="line"></span>
+                                        Requester
+                                    </th>
+                                    <th class="col-md-2">
+                                        <span class="line"></span>
+                                        Requested
                                     </th>
                                     <th class="col-md-3">
                                         <span class="line"></span>
-                                        Date
+                                        Subject
                                     </th>
-                                    <th class="col-md-3">
+                                    <th class="col-md-1">
                                         <span class="line"></span>
-                                        Items
+                                        Group
                                     </th>
-                                    <th class="col-md-3">
+                                    <th class="col-md-2">
                                         <span class="line"></span>
-                                        Total amount
+                                        Asignee
+                                    </th>
+                                    <th class="col-md-1">
+                                        <span class="line"></span>
+                                        Status
                                     </th>
                                 </tr>
                             </thead>
@@ -321,49 +342,134 @@
                                 <!-- row -->
                                 <tr class="first">
                                     <td>
-                                        <a href="#">#459</a>
+                                        <a href="#">459156</a>
+                                    </td>
+                                    <td>
+                                        Martin Stephenson
                                     </td>
                                     <td>
                                         Jan 03, 2013
                                     </td>
                                     <td>
-                                        3
+                                        Add new blog post.
                                     </td>
                                     <td>
-                                        $ 3,500.00
+                                        Design
+                                    </td>
+                                    <td>
+                                        John Smith
+                                    </td>
+                                    <td>
+                                        <a class="btn-xs btn-info" href="#">Open</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <a href="#">#510</a>
+                                        <a href="#">510434</a>
+                                    </td>
+                                    <td>
+                                        Steven Smith
                                     </td>
                                     <td>
                                         Feb 22, 2013
                                     </td>
                                     <td>
-                                        5
+                                        Homepage Banner Change
                                     </td>
                                     <td>
-                                        $ 800.00
+                                        Newsletter
+                                    </td>
+                                    <td>
+                                        Jane Doe
+                                    </td>
+                                    <td>
+                                        <a class="btn-xs btn-success" href="#">Pending</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <a href="#">#618</a>
+                                        <a href="#">618232</a>
+                                    </td>
+                                    <td>
+                                        Brian Morgan
                                     </td>
                                     <td>
                                         Jan 03, 2013
                                     </td>
                                     <td>
-                                        8
+                                        Website Update Request
                                     </td>
                                     <td>
-                                        $ 3,499.99
+                                        Development
+                                    </td>
+                                    <td>
+                                        Cory Smith
+                                    </td>
+                                    <td>
+                                        <a class="btn-xs btn-danger" href="#">Closed</a>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
-
+                    </div>
+                    <!-- end recent tickets table -->
+                    <div class="col-md-12">
+                        <h6>Users</h6>
+                        <br>
+                        <!-- Users table -->
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th class="col-md-1">
+                                        User
+                                    </th>
+                                    <th class="col-md-5">
+                                        
+                                    </th>
+                                    <th class="col-md-2">
+                                        <span class="line"></span>
+                                        Role
+                                    </th>
+                                    <th class="col-md-4">
+                                        <span class="line"></span>
+                                        Email Address
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- row -->
+                                <tr class="first">
+                                    <td>
+                                        <img src="img/contact-img2.png" class="img-circle avatar hidden-phone">
+                                    </td>
+                                    <td>
+                                        <a href="#">Vicky Stephenson</a>
+                                    </td>
+                                    <td>
+                                        Billing
+                                    </td>
+                                    <td>
+                                        vicky@mcflycompanyco.com
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="img/contact-img.png" class="img-circle avatar hidden-phone">
+                                    </td>
+                                    <td>
+                                        <a href="#">Sandy Jane</a>
+                                    </td>
+                                    <td>
+                                        Admin
+                                    </td>
+                                    <td>
+                                        sandy@mcflycompanyco.com
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                        <!-- end users table -->
                         <!-- new comment form -->
                         <div class="col-md-12 section comment">
                             <h6>Add a quick note</h6>

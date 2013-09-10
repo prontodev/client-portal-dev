@@ -1,3 +1,10 @@
+.table img.avatar {
+  float: left;
+  margin-right: 14px;
+  max-width: 35px;
+  position: relative;
+}
+
 .user-profile .header .avatar {
   float: left;
   margin-right: 25px;
