@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Detail Admin - Organization Profile</title>
+	<title>Detail Admin - User Profile</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="css/compiled/icons.css">
     
     <!-- this page specific styles -->
-    <link rel="stylesheet" href="css/compiled/org-profile.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/compiled/user-profile.css" type="text/css" media="screen" />
 
     <!-- open sans font -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -269,12 +269,11 @@
         </div>
         
         <div id="pad-wrapper" class="user-profile">
-            <div class="row profile">
-                <!-- header -->
-                <div class="row header">
-                    <div class="col-md-6">
-                        <h3 class="name">McFly Company & Co. 
-                        <div class="btn-group">
+            <!-- header -->
+            <div class="row header">
+                <div class="col-md-8">
+                    <img src="img/contact-profile.png" class="avatar img-circle">
+                    <h3 class="name">Sandy Smith <div class="btn-group">
                             <button class="btn glow"> <i class="icon-cogs"></i></button>
                             <button class="btn glow dropdown-toggle" data-toggle="dropdown">
                                 <span class="caret"></span>
@@ -284,141 +283,31 @@
                                 <li><a href="#dnsdelete" data-toggle="modal"><i class="icon-fixed-width icon-trash"></i>Delete record</a></li>
                             </ul>
                         </div></h3>
-                    </div>
-                    
+                        <span class="area"><a href="organization-profile.html">McFly Company & Co.</a></span>
             </div>
-                <!-- profile details, tickets, users, notes -->
+            </div>
+
+            <div class="row profile">
+                <!-- bio, new note & orders column -->
                 <div class="col-md-9 bio">
                     <div class="profile-box">
                         <!-- biography -->
                         <div class="col-md-12 section">
                             <div class="row">
                                 <div class="col-md-6"> 
-                                    <p><strong>Primary Contact</strong>: Derek Brown</p>
+                                    <h6>Contact Information</h6>
                                     <p><strong>Email</strong>: derek@prontomarketing.com</p>
                                     <p><strong>Phone</strong>: 8002703440</p>
+                                    <p><strong>Organization</strong>: McFly Company & Co.</p>
                                 </div>
                                 <div class="col-md-6">
-                                    <p><strong>Production Manager</strong>: Cory Smith</p>
-                                    <p><strong>Industry</strong>: Technology</p>
-                                    <p><strong>Country</strong>: USA</p>
+                                    <h6>User Details</h6>
+                                    <p><strong>User Role</strong>: Admin</p>
                                 </div>
                             </div>
                         </div>
-                        <!-- sites table -->
+
                         <div class="col-md-12">
-                            <h6>Sites</h6>
-                            <br>
-                            <table class="table table-hover">
-                                <thead>
-                                    <tr>
-                                        <th class="col-md-4">
-                                            Site
-                                        </th>
-                                        <th class="col-md-1">
-                                            <span class="line"></span>
-                                            Signup Date
-                                        </th>
-                                        <th class="col-md-1">
-                                            <span class="line"></span>
-                                            Live Date
-                                        </th>
-                                        <th class="col-md-2">
-                                            <span class="line"></span>
-                                            Production Manager
-                                        </th>
-                                        <th class="col-md-2">
-                                            <span class="line"></span>
-                                            Status
-                                        </th>
-                                        <th class="col-md-2">
-                                            <span class="line"></span>
-                                            Actions
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <!-- row -->
-                                    <tr class="first">
-                                        <td>
-                                            <a href="#">McFly Company & Co</a>
-                                        </td>
-                                        <td>
-                                            Jan 03, 2013
-                                        </td>
-                                        <td>
-                                            Feb 22, 2013
-                                        </td>
-                                        <td>
-                                            John Smith
-                                        </td>
-                                        <td>
-                                            <a class="btn-xs btn-info" href="#">Live</a>
-                                        </td>
-                                        <td>
-                                            <ul class="actions">
-                                                <li><a href="#"><i class="icon-eye-open icon-large" data-toggle="tooltip" data-placement="top" title="" data-original-title="View Site"></i></a></li>
-                                                <li><a href="site-insights.html"><i class="icon-signal icon-large" data-toggle="tooltip" data-placement="top" title="" data-original-title="View Insights"></i></a></li>
-                                                <li><a href="#"><i class="icon-cog icon-large" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit Site Details"></i></a></li>
-                                                <li class="last"><a href="#"><i class="icon-dashboard icon-large" data-toggle="tooltip" data-placement="top" title="" data-original-title="WordPress Login"></i></a></li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="#">McFly Company Mini Site</a>
-                                        </td>
-                                        <td>
-                                            Feb 22, 2013
-                                        </td>
-                                        <td>
-                                            -
-                                        </td>
-                                        <td>
-                                            Jane Doe
-                                        </td>
-                                        <td>
-                                            <a class="btn-xs btn-success" href="#">In Production</a>
-                                        </td>
-                                        <td>
-                                            <ul class="actions">
-                                                <li><a href="#"><i class="icon-eye-open icon-large" data-toggle="tooltip" data-placement="top" title="" data-original-title="View Site"></i></a></li>
-                                                <li><a href="site-insights.html"><i class="icon-signal icon-large" data-toggle="tooltip" data-placement="top" title="" data-original-title="View Insights"></i></a></li>
-                                                <li><a href="#"><i class="icon-cog icon-large" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit Site Details"></i></a></li>
-                                                <li class="last"><a href="#"><i class="icon-dashboard icon-large" data-toggle="tooltip" data-placement="top" title="" data-original-title="WordPress Login"></i></a></li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="#">McFly Mini Site</a>
-                                        </td>
-                                        <td>
-                                            Feb 22, 2013
-                                        </td>
-                                        <td>
-                                            Aug 13, 2013
-                                        </td>
-                                        <td>
-                                            Jane Doe
-                                        </td>
-                                        <td>
-                                            <a class="btn-xs btn-danger" href="#">Cancelled</a>
-                                        </td>
-                                        <td>
-                                            <ul class="actions">
-                                                <li><a href="#"><i class="icon-eye-open icon-large" data-toggle="tooltip" data-placement="top" title="" data-original-title="View Site"></i></a></li>
-                                                <li><a href="site-insights.html"><i class="icon-signal icon-large" data-toggle="tooltip" data-placement="top" title="" data-original-title="View Insights"></i></a></li>
-                                                <li><a href="#"><i class="icon-cog icon-large" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit Site Details"></i></a></li>
-                                                <li class="last"><a href="#"><i class="icon-dashboard icon-large" data-toggle="tooltip" data-placement="top" title="" data-original-title="WordPress Login"></i></a></li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <!-- end sites table -->
-                    <div class="col-md-12">
                         <h6>Recent Tickets</h6>
                         <br>
                         <!-- recent tickets table -->
@@ -461,7 +350,7 @@
                                         <a href="#">459156</a>
                                     </td>
                                     <td>
-                                        Martin Stephenson
+                                        Sandy Smith
                                     </td>
                                     <td>
                                         Jan 03, 2013
@@ -484,7 +373,7 @@
                                         <a href="#">510434</a>
                                     </td>
                                     <td>
-                                        Steven Smith
+                                        Sandy Smith
                                     </td>
                                     <td>
                                         Feb 22, 2013
@@ -526,34 +415,12 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <a href="#">510434</a>
-                                    </td>
-                                    <td>
-                                        Steven Smith
-                                    </td>
-                                    <td>
-                                        Feb 22, 2013
-                                    </td>
-                                    <td>
-                                        Homepage Banner Change
-                                    </td>
-                                    <td>
-                                        Newsletter
-                                    </td>
-                                    <td>
-                                        Jane Doe
-                                    </td>
-                                    <td>
-                                        <a class="btn-xs btn-success" href="#">Pending</a>
-                                    </td>
-                                </tr>
                                 <tr>
                                     <td>
                                         <a href="#">618232</a>
                                     </td>
                                     <td>
-                                        Brian Morgan
+                                        Sandy Smith
                                     </td>
                                     <td>
                                         Jan 03, 2013
@@ -576,30 +443,7 @@
                                         <a href="#">618232</a>
                                     </td>
                                     <td>
-                                        Brian Morgan
-                                    </td>
-                                    <td>
-                                        Jan 03, 2013
-                                    </td>
-                                    <td>
-                                        Website Update Request
-                                    </td>
-                                    <td>
-                                        Development
-                                    </td>
-                                    <td>
-                                        Cory Smith
-                                    </td>
-                                    <td>
-                                        <a class="btn-xs btn-danger" href="#">Closed</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="#">618232</a>
-                                    </td>
-                                    <td>
-                                        Brian Morgan
+                                        Sandy Smith
                                     </td>
                                     <td>
                                         Jan 03, 2013
@@ -621,119 +465,7 @@
                         </table>
                     </div>
                     <!-- end recent tickets table -->
-                    <div class="table-products col-md-12">
-                        <h6>Users</h6>
-                        <br>
-                        <!-- Users table -->
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th class="col-md-1">
-                                        User
-                                    </th>
-                                    <th class="col-md-3">
-                                        
-                                    </th>
-                                    <th class="col-md-2">
-                                        <span class="line"></span>
-                                        Role
-                                    </th>
-                                    <th class="col-md-5">
-                                        <span class="line"></span>
-                                        Email Address
-                                    </th>
-                                    <th class="col-md-1">
-                                        <span class="line"></span>
-                                        Actions
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <!-- row -->
-                                <tr class="first">
-                                    <td>
-                                        <img src="img/contact-img2.png" class="img-circle avatar hidden-phone">
-                                    </td>
-                                    <td>
-                                        <a href="#">Vicky Stephenson</a>
-                                    </td>
-                                    <td>
-                                        General
-                                    </td>
-                                    <td>
-                                        vicky@mcflycompanyco.com
-                                    </td>
-                                    <td>
-                                        <ul class="actions">
-                                            <li><a href="#"><i class="icon-eye-open icon-large" data-toggle="tooltip" data-placement="top" title="" data-original-title="View User"></i></a></li>
-                                            <li class="last"><a href="#"><i class="icon-cog icon-large" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit User"></i></a></li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img src="img/contact-img.png" class="img-circle avatar hidden-phone">
-                                    </td>
-                                    <td>
-                                        <a href="#">Sandy Jane</a>
-                                    </td>
-                                    <td>
-                                        Admin
-                                    </td>
-                                    <td>
-                                        sandy@mcflycompanyco.com
-                                    </td>
-                                    <td>
-                                        <ul class="actions">
-                                            <li><a href="#"><i class="icon-eye-open icon-large" data-toggle="tooltip" data-placement="top" title="" data-original-title="View User"></i></a></li>
-                                            <li class="last"><a href="#"><i class="icon-cog icon-large" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit User"></i></a></li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img src="img/contact-img2.png" class="img-circle avatar hidden-phone">
-                                    </td>
-                                    <td>
-                                        <a href="#">Vicky Stephenson</a>
-                                    </td>
-                                    <td>
-                                        Billing
-                                    </td>
-                                    <td>
-                                        vicky@mcflycompanyco.com
-                                    </td>
-                                    <td>
-                                        <ul class="actions">
-                                            <li><a href="#"><i class="icon-eye-open icon-large" data-toggle="tooltip" data-placement="top" title="" data-original-title="View User"></i></a></li>
-                                            <li class="last"><a href="#"><i class="icon-cog icon-large" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit User"></i></a></li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img src="img/contact-img.png" class="img-circle avatar hidden-phone">
-                                    </td>
-                                    <td>
-                                        <a href="#">Sandy Jane</a>
-                                    </td>
-                                    <td>
-                                        General
-                                    </td>
-                                    <td>
-                                        sandy@mcflycompanyco.com
-                                    </td>
-                                    <td>
-                                        <ul class="actions">
-                                            <li><a href="#"><i class="icon-eye-open icon-large" data-toggle="tooltip" data-placement="top" title="" data-original-title="View User"></i></a></li>
-                                            <li class="last"><a href="#"><i class="icon-cog icon-large" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit User"></i></a></li>
-                                        </ul>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                        <!-- end users table -->
+
                         <!-- new comment form -->
                         <div class="col-md-12 section comment">
                             <h6>Add a quick note</h6>
@@ -741,7 +473,7 @@
                             <textarea></textarea>
                             <a href="#">Attach files</a>
                             <div class="col-md-12 submit-box pull-right">
-                                <input type="submit" class="btn-flat primary" value="Add Note">
+                                <input type="submit" class="btn-glow primary" value="Add Note">
                                 <span>OR</span>
                                 <input type="reset" value="Cancel" class="reset">
                             </div>
@@ -753,11 +485,18 @@
                 <div class="col-md-3 col-xs-12 address pull-right">
                     <h6>Address</h6>
                     <iframe width="300" height="133" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.mx/?ie=UTF8&amp;t=m&amp;ll=19.715081,-155.071421&amp;spn=0.010746,0.025749&amp;z=14&amp;output=embed"></iframe>
-                    <a href="https://maps.google.com/" target="_blank" class="btn-xs btn-success pull-right">Google Maps</a>
                     <ul>
                         <li>2301 East Lamar Blvd. Suite 140. </li>
                         <li>City, Arlington. United States,</li>
                         <li>Zip Code, TX 76006.</li>
+                        <li class="ico-li">
+                            <i class="ico-phone"></i>
+                            1817 274 2933
+                        </li>
+                         <li class="ico-li">
+                            <i class="ico-mail"></i>
+                            <a href="#">alejandra@detail.com</a>
+                        </li>
                     </ul>
                 </div>
             </div>
