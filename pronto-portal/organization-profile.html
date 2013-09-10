@@ -269,21 +269,25 @@
         </div>
         
         <div id="pad-wrapper" class="user-profile">
-            <!-- header -->
-            <div class="row header">
-                <div class="col-md-8">
-                    <h3 class="name">McFly Company & Co.</h3>
-                </div>
-                <a class="btn-flat icon pull-right delete-user" data-toggle="tooltip" title="Delete user" data-placement="top">
-                    <i class="icon-trash"></i>
-                </a>
-                 <a class="btn-flat icon large pull-right edit">
-                    Edit this person
-                </a>
-            </div>
-
             <div class="row profile">
-                <!-- bio, new note & orders column -->
+                <!-- header -->
+                <div class="row header">
+                    <div class="col-md-6">
+                        <h3 class="name">McFly Company & Co. 
+                        <div class="btn-group">
+                            <button class="btn glow"> <i class="icon-cogs"> </i> Actions</button>
+                            <button class="btn glow dropdown-toggle" data-toggle="dropdown">
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#dnsedit" data-toggle="modal"><i class="icon-fixed-width icon-edit"></i> Edit record</a></li>
+                                <li><a href="#dnsdelete" data-toggle="modal"><i class="icon-fixed-width icon-trash"></i>Delete record</a></li>
+                            </ul>
+                        </div></h3>
+                    </div>
+                    
+            </div>
+                <!-- profile details, tickets, users, notes -->
                 <div class="col-md-9 bio">
                     <div class="profile-box">
                         <!-- biography -->
@@ -388,6 +392,98 @@
                                 </tr>
                                 <tr>
                                     <td>
+                                        <a href="#">510434</a>
+                                    </td>
+                                    <td>
+                                        Steven Smith
+                                    </td>
+                                    <td>
+                                        Feb 22, 2013
+                                    </td>
+                                    <td>
+                                        Homepage Banner Change
+                                    </td>
+                                    <td>
+                                        Newsletter
+                                    </td>
+                                    <td>
+                                        Jane Doe
+                                    </td>
+                                    <td>
+                                        <a class="btn-xs btn-success" href="#">Pending</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#">510434</a>
+                                    </td>
+                                    <td>
+                                        Steven Smith
+                                    </td>
+                                    <td>
+                                        Feb 22, 2013
+                                    </td>
+                                    <td>
+                                        Homepage Banner Change
+                                    </td>
+                                    <td>
+                                        Newsletter
+                                    </td>
+                                    <td>
+                                        Jane Doe
+                                    </td>
+                                    <td>
+                                        <a class="btn-xs btn-success" href="#">Pending</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#">618232</a>
+                                    </td>
+                                    <td>
+                                        Brian Morgan
+                                    </td>
+                                    <td>
+                                        Jan 03, 2013
+                                    </td>
+                                    <td>
+                                        Website Update Request
+                                    </td>
+                                    <td>
+                                        Development
+                                    </td>
+                                    <td>
+                                        Cory Smith
+                                    </td>
+                                    <td>
+                                        <a class="btn-xs btn-danger" href="#">Closed</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="#">618232</a>
+                                    </td>
+                                    <td>
+                                        Brian Morgan
+                                    </td>
+                                    <td>
+                                        Jan 03, 2013
+                                    </td>
+                                    <td>
+                                        Website Update Request
+                                    </td>
+                                    <td>
+                                        Development
+                                    </td>
+                                    <td>
+                                        Cory Smith
+                                    </td>
+                                    <td>
+                                        <a class="btn-xs btn-danger" href="#">Closed</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
                                         <a href="#">618232</a>
                                     </td>
                                     <td>
@@ -446,7 +542,7 @@
                                         <a href="#">Vicky Stephenson</a>
                                     </td>
                                     <td>
-                                        Billing
+                                        General
                                     </td>
                                     <td>
                                         vicky@mcflycompanyco.com
@@ -466,6 +562,34 @@
                                         sandy@mcflycompanyco.com
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td>
+                                        <img src="img/contact-img2.png" class="img-circle avatar hidden-phone">
+                                    </td>
+                                    <td>
+                                        <a href="#">Vicky Stephenson</a>
+                                    </td>
+                                    <td>
+                                        Billing
+                                    </td>
+                                    <td>
+                                        vicky@mcflycompanyco.com
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="img/contact-img.png" class="img-circle avatar hidden-phone">
+                                    </td>
+                                    <td>
+                                        <a href="#">Sandy Jane</a>
+                                    </td>
+                                    <td>
+                                        General
+                                    </td>
+                                    <td>
+                                        sandy@mcflycompanyco.com
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -477,7 +601,7 @@
                             <textarea></textarea>
                             <a href="#">Attach files</a>
                             <div class="col-md-12 submit-box pull-right">
-                                <input type="submit" class="btn-glow primary" value="Add Note">
+                                <input type="submit" class="btn-flat primary" value="Add Note">
                                 <span>OR</span>
                                 <input type="reset" value="Cancel" class="reset">
                             </div>
@@ -493,14 +617,6 @@
                         <li>2301 East Lamar Blvd. Suite 140. </li>
                         <li>City, Arlington. United States,</li>
                         <li>Zip Code, TX 76006.</li>
-                        <li class="ico-li">
-                            <i class="ico-phone"></i>
-                            1817 274 2933
-                        </li>
-                         <li class="ico-li">
-                            <i class="ico-mail"></i>
-                            <a href="#">alejandra@detail.com</a>
-                        </li>
                     </ul>
                 </div>
             </div>
